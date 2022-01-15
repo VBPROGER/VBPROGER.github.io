@@ -1,8 +1,11 @@
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <script>
-$.getJSON('https://api.ipify.org?format=json', function(data){
-    console.log(data.ip);
-});
+    $.get("https://ipinfo.io", function(response) {
+            get_IP=response.ip
+            var ip_content = ip.innerHTML
+            ip.innerHTML = get_IP
+        }, "json")
 </script>
+<div id="ip"></div>
