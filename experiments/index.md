@@ -1,2 +1,2 @@
-# 404
-Not found
+# Error
+404 (Invalid URL given)
