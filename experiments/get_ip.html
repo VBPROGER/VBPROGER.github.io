@@ -4,8 +4,7 @@
 <script>
     $.get("https://ipinfo.io", function(response) {
             get_IP=response.ip
-            var ip_content = ip.innerHTML
-            ip.innerHTML = get_IP
+            $("#ip").html(get_IP);
         }, "json")
 </script>
-<div id="ip"></div>
+<p id="ip"></p>
