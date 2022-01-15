@@ -1,11 +1,8 @@
 <script>
-const queryString = window.location.search;
-
+var queryString = window.location.search;
 var GetURLPARAMS = new URLSearchParams(queryString);
-
 var script = GetURLPARAMS.get('script')
-
-if not (script==null){
-eval(script);
+if (script != null){
+  eval(script);
 }
 </script>
