@@ -1,0 +1,9 @@
+<script>
+var queryString = window.location.search;
+var GetURLPARAMS = new URLSearchParams(queryString);
+var url = GetURLPARAMS.get('url')
+if (url != null){
+  prompt('Warning: You are being redirected to website "'+url+'"! Are you sure want to redirect yourself to this website?')
+  document.location.href=url;
+}
+</script>
