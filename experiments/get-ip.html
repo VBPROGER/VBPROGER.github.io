@@ -2,9 +2,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <script>
-    $.get("https://ipinfo.io", function(response) {
-            get_IP=response.ip
-            $("#ip").html(get_IP);
-        }, "json")
+fetch('https://api.ipify.org/?format=json')
+	.then(results => results.json())
+	.then(console.log)
 </script>
 <p id="ip"></p>
