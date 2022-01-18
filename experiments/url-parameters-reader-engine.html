@@ -1,0 +1,8 @@
+<script>
+var queryString = window.location.search;
+var GetURLPARAMS = new URLSearchParams(queryString);
+var yourname = GetURLPARAMS.get('name')
+if (yourname != null){
+  alert('Your name is: '+name);
+}
+</script>
