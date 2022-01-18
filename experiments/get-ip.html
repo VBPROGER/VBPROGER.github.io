@@ -1,15 +1,15 @@
 <html>
+<body>
+<p id="ip_tag"></p
+</body>
 <head>
 <script type="application/javascript">
 function IP_GET(json) {
-IP=json.ip;
-ip_element=document.getElementByID('ip')
-ip_element.inner_html(IP)
+var YOUR_IP=json.ip;
+var ip_element=document.getElementById("ip_tag");
+ip_element.innerHTML=YOUR_IP;
 }
 </script>
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=IP_GET"></script>
 </head>
-<body>
-<p id="ip"></p>
-</body>
 </html>
