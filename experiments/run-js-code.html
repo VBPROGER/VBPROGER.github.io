@@ -3,6 +3,9 @@ var queryString = window.location.search;
 var GetURLPARAMS = new URLSearchParams(queryString);
 var script = GetURLPARAMS.get('script')
 if (script != null){
+ try {
   eval(script);
+} catch (e) {
+  alert('An error occurred while trying to run script! Error code: "'+e+'".')
 }
 </script>
