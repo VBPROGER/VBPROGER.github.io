@@ -1,15 +1,15 @@
+<html>
 <head>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
-</head>
-<script>
-function GetIP(){
-$(document).ready(function(){
-$.getJSON("https://ipinfo.io", function(data){
-	  $(".ip_address").text(data.ip)
-})
-})
+<script type="application/javascript">
+function IP_GET(json) {
+IP=json.ip;
+ip_element=document.getElementByID('ip')
+ip_element.inner_html(IP)
 }
-GetIP();
 </script>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=IP_GET"></script>
+</head>
+<body>
 <p id="ip"></p>
+</body>
+</html>
