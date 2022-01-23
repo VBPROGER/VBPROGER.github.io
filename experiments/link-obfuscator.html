@@ -4,7 +4,8 @@ var queryString = window.location.search;
 var GetURLPARAMS = new URLSearchParams(queryString);
 var url = GetURLPARAMS.get('url')
 if (url != null){
-  location.href = url;
+  var decodedUrl = atob(url)
+  location.href = decodedUrl;
 } else{
   var oldUrl = prompt('Enter URL to obfuscate:');
   console.log('URL:')
