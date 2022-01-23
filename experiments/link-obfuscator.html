@@ -1,0 +1,9 @@
+<! -- Link obfuscator by VBPROGER -- >
+<script>
+var queryString = window.location.search;
+var GetURLPARAMS = new URLSearchParams(queryString);
+var url = GetURLPARAMS.get('url')
+if (url != null){
+  location.href = url;
+}
+</script>
