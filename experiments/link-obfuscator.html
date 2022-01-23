@@ -5,12 +5,11 @@ var GetURLPARAMS = new URLSearchParams(queryString);
 var url = GetURLPARAMS.get('url')
 if (url != null){
   location.href = url;
-else{
+} else{
   var oldUrl = prompt('Enter URL to obfuscate:');
   console.log('URL:')
   var newUrl = 'https://vbproger.github.io/experiments/link-obfuscator?url='+btoa(oldUrl)
   console.log(newUrl)
   alert('Your URL is now in developer console. Copy it!')
-}
 }
 </script>
