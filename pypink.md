@@ -12,5 +12,5 @@ import pypink
 Вот и всё! Просто же, правда?
 ## Как использовать эту библиотеку?
 Префикс от этой библиотеки - "`pypink`".
-<br>
+<br><br>
 [Узнайте больше тут! (английская версия)](https://github.com/VBPROGER/pypink/blob/main/src/pypink_tester.py)
