@@ -1,7 +1,9 @@
-# Hey are you looking for English version?
-[Click here to start creating some cool programs!](https://github.com/VBPROGER/jm5/blob/main/1.0.0/README.md)
 # jM5 - Библиотека для JavaScript
 Сделано VBPROGER.
+<br>
+# Hey, are you looking for English version?
+[Click here to start creating some cool programs!](https://github.com/VBPROGER/jm5/blob/main/1.0.0/README.md)
+<br>
 ## Как загрузить её?
 Вставьте это в ваш код HTML:
 ```html
