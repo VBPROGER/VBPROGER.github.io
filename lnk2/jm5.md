@@ -7,7 +7,7 @@
 ## Как загрузить её?
 Вставьте это в ваш код HTML:
 ```html
-<script src="https://github.com/VBPROGER/jm5/blob/main/1.0.0/CODE-MINIFIED.js"></script>
+<script src="https://raw.githubusercontent.com/VBPROGER/jm5/main/1.0.0/CODE-MINIFIED.js"></script>
 ```
 ## Как использовать её?
 Префикс от этой библиотеки - "`jm5`".
