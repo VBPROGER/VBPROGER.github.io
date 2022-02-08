@@ -10,6 +10,6 @@
 <br><br><br>
 # <! ---  ---  !>
 <br>
-[Получить IP адрес](get-ip.html)
+[Получить IP адрес](https://vbproger.github.io/experiments/get-ip.html)
 <br>
 # <! ---  ---  !>
