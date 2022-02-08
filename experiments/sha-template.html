@@ -1,0 +1,13 @@
+<! -- Usage: https://vbproger.github.io/experiments/sha[]?text="My cool text!" -- >
+<script>
+var queryString = window.location.search;
+var GetURLPARAMS = new URLSearchParams(queryString);
+var script = GetURLPARAMS.get('text')
+if (script != null){
+ try {
+  // sha generation here
+} catch (e) {
+  alert('An error occurred while trying to convert to SHA []! Error code: "'+e+'".')
+}
+}
+</script>
