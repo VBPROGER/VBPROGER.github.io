@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <! -- Usage: https://vbproger.github.io/experiments/sha256?text=My+cool+text+without+context! -- >
+<head>
 <script>
 function hash(string) {
   const utf8 = new TextEncoder().encode(string);
@@ -18,7 +19,7 @@ var text = GetURLPARAMS.get('text')
 if (text != null){
  try {
   window.addEventListener('load', function() {
-    hash(text).then((hex) => document.write(hex));
+    hash(text).then((hex) => document.write('<body>\n'+hex+'</body>'));
     // window.eval('var encoded_text="' + hex + '";'))
   })
 } catch (e) {
@@ -26,3 +27,4 @@ if (text != null){
 }
 }
 </script>
+</head>
