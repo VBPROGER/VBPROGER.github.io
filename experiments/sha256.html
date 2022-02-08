@@ -1,11 +1,15 @@
 <! -- Usage: https://vbproger.github.io/experiments/sha256?text="My cool text!" -- >
-<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 <script>
-var { createHash } = require('crypto');
 function hash(string) {
-  return createHash('sha256').update(string).digest('hex');
+  const utf8 = new TextEncoder().encode(string);
+  return crypto.subtle.digest('SHA-256', utf8).then((hashBuffer) => {
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray
+      .map((bytes) => bytes.toString(16).padStart(2, '0'))
+      .join('');
+    return hashHex;
+  });
 }
-
 
 var queryString = window.location.search;
 var GetURLPARAMS = new URLSearchParams(queryString);
