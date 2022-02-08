@@ -1,0 +1,7 @@
+{
+  "name": "VBPROGER",
+  "surname": null,
+  "age": undefined,
+  "is_owner": true,
+  "currently_learning": ["html", "js", "json", "python"]
+}
