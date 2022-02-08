@@ -1,4 +1,4 @@
-<! -- Usage: https://vbproger.github.io/experiments/sha256?text="My cool text!" -- >
+<! -- Usage: https://vbproger.github.io/experiments/sha256?text=My+cool+text+without+context! -- >
 <script>
 function hash(string) {
   const utf8 = new TextEncoder().encode(string);
@@ -16,10 +16,11 @@ var GetURLPARAMS = new URLSearchParams(queryString);
 var text = GetURLPARAMS.get('text')
 if (text != null){
  try {
-  console.log(text)
-  console.info(text)
-  console.error(text)
-  document.write(text)
+  hash('foo').then((hex) => var encoded_text = hex
+  console.log(encoded_text)
+  console.info(encoded_text)
+  console.error(encoded_text)
+  document.write(encoded_text)
 } catch (e) {
   alert('An error occurred while trying to convert to SHA 256! Error code: "'+e+'".')
 }
