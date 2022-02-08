@@ -10,11 +10,11 @@
 <br><br><br>
 # <! ---  ---  !>
 <br>
-[Получить IP адрес](https://vbproger.github.io/experiments/get-ip.html). [^nofirefox]; [^internetrequired];
+[Получить IP адрес](https://vbproger.github.io/experiments/get-ip.html)
 <br>
 # Формат
 <br>
-[^nofirefox] Этот эксперимент не поддерживается на Firefox.
+[^nofirefox]: Этот эксперимент не поддерживается на Firefox.
 <br>
-[^internetrequired] Для этого эксперимента требуется интернет.
+[^internetrequired]: Для этого эксперимента требуется интернет.
 # <! ---  ---  !>
