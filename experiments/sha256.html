@@ -11,9 +11,6 @@ function hash(string) {
     return hashHex;
   });
 }
-function sleep(ms){
-await new Promise(r => setTimeout(r, 2000));
-}
 
 var queryString = window.location.search;
 var GetURLPARAMS = new URLSearchParams(queryString);
