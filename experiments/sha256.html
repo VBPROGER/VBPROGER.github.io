@@ -19,7 +19,7 @@ var text = GetURLPARAMS.get('text')
 if (text != null){
  try {
   window.addEventListener('load', function() {
-    hash(text).then((hex) => document.write('<body>\n'+hex+'</body>'));
+    hash(text).then((hex) => document.write('<div id="result">\n'+hex+'</div>'));
     // window.eval('var encoded_text="' + hex + '";'))
   })
 } catch (e) {
