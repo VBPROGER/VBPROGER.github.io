@@ -16,7 +16,7 @@ var GetURLPARAMS = new URLSearchParams(queryString);
 var text = GetURLPARAMS.get('text')
 if (text != null){
  try {
-  hash('foo').then((hex) => var encoded_text = hex
+  hash('foo').then((hex) => eval('var encoded_text = '+hex)
   console.log(encoded_text)
   console.info(encoded_text)
   console.error(encoded_text)
