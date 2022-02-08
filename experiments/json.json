@@ -1,7 +1,9 @@
 {
   "name": "VBPROGER",
   "surname": null,
-  "age": undefined,
+  "age": "unknown at the moment",
   "is_owner": true,
+  "is_this_an_easter_egg": true,
+  "am_i_cool": "Sure, you're cool.",
   "currently_learning": ["html", "js", "json", "python"]
 }
