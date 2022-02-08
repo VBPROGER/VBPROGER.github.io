@@ -11,6 +11,9 @@ function hash(string) {
     return hashHex;
   });
 }
+function sleep(ms){
+await new Promise(r => setTimeout(r, 2000));
+}
 
 var queryString = window.location.search;
 var GetURLPARAMS = new URLSearchParams(queryString);
@@ -19,6 +22,7 @@ if (text != null){
  try {
   window.addEventListener('load', function() {
     hash(text).then((hex) => window.eval('var encoded_text="' + hex + '";'))
+    await sleep(1000)
     console.log(encoded_text)
     console.info(encoded_text)
     console.error(encoded_text)
