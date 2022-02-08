@@ -1,11 +1,20 @@
 <! -- Usage: https://vbproger.github.io/experiments/sha256?text="My cool text!" -- >
+<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 <script>
+var { createHash } = require('crypto');
+function hash(string) {
+  return createHash('sha256').update(string).digest('hex');
+}
+
+
 var queryString = window.location.search;
 var GetURLPARAMS = new URLSearchParams(queryString);
-var script = GetURLPARAMS.get('text')
-if (script != null){
+var text = GetURLPARAMS.get('text')
+if (text != null){
  try {
-  // sha generation here
+  console.log(text)
+  return hash(text)
+  document.write(text)
 } catch (e) {
   alert('An error occurred while trying to convert to SHA 256! Error code: "'+e+'".')
 }
