@@ -10,9 +10,7 @@
 <br><br><br>
 # <! ---  ---  !>
 <br>
-[Получить IP адрес](https://vbproger.github.io/experiments/get-ip.html)
-[^nofirefox]
-[^internetrequired]
+[Получить IP адрес](https://vbproger.github.io/experiments/get-ip.html). [^nofirefox]; [^internetrequired];
 <br>
 # Формат
 <br>
