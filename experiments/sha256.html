@@ -21,12 +21,8 @@ var text = GetURLPARAMS.get('text')
 if (text != null){
  try {
   window.addEventListener('load', function() {
-    hash(text).then((hex) => window.eval('var encoded_text="' + hex + '";'))
-    await sleep(1000)
-    console.log(encoded_text)
-    console.info(encoded_text)
-    console.error(encoded_text)
-    document.write(encoded_text)
+    hash(text).then((hex) => document.write(hex));
+    // window.eval('var encoded_text="' + hex + '";'))
   })
 } catch (e) {
   alert('An error occurred while trying to convert to SHA 256! Error code: "'+e+'".')
