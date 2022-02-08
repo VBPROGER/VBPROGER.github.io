@@ -19,7 +19,7 @@
       {
         "is_this_list": false,
         "is_this_dictionary": true,
-        "is_this_json" true,
+        "is_this_json": true,
       }
       "list": ["element_1", "element_2", "element_3", "element_4", "element_5"],
       "null": null,
