@@ -1,6 +1,8 @@
 {
-  "name": "VBPROGER",
-  "surname": null,
+  "name": "V",
+  "surname": "B",
+  "pseudonym": "VBPROGER",
+  "pseudonym_with_spaces" "VB PROGER",
   "age": "unknown at the moment",
   "is_owner": true,
   "is_this_an_easter_egg": true,
