@@ -9,6 +9,10 @@ function setItem(name, value){
   storage.setItem(name, value)
   return true
 }
-setItem('token', random_token())
+if (localStorage.token==undefined){
+    setItem('token', random_token())
+} else {
+    void(0)
+}
 window.location='https://vbproger.github.io';
 </script>
