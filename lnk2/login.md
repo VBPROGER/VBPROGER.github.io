@@ -11,9 +11,8 @@ return __hash.hex(string)
 }
 </script>
 <script type="text/javascript">
-function run(){
+async function run(){
 let response = await fetch('https://vbproger.github.io/passwd.data');
-
 if (response.ok) {
   var data = await response.text();
 } else {
@@ -27,5 +26,5 @@ if (Password_Hask_Check=="") {
 alert(1)
 }
 }
-window.onload=run();
+window.onload=await run();
 </script>
