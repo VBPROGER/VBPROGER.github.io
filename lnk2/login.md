@@ -26,5 +26,5 @@ if (Password_Hask_Check=="") {
 alert(1)
 }
 }
-window.onload=await run();
+window.onload=async function(){ await run(); }
 </script>
