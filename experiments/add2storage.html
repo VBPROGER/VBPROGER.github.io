@@ -1,5 +1,13 @@
 <script src="https://raw.githubusercontent.com/VBPROGER/VBPROGER.github.io/main/api/storage_api.js" type="text/javascript">
 </script>
 <script type="text/javascript">
-
+function random_token(){
+  return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+}
+function run(){
+  setItem('token', random_token())
+}
+</script>
+<script type="text/javascript">
+window.onload = run()
 </script>
