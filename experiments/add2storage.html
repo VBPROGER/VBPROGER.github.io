@@ -1,9 +1,11 @@
 <script src="https://raw.githubusercontent.com/VBPROGER/VBPROGER.github.io/main/api/storage_api.js" type="text/javascript">
+var storage = window.localStorage
 function random_token(){
   return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
 }
-function run(){
-  setItem('token', random_token())
+function setItem(name, value){
+  storage.setItem(name, value)
+  return true
 }
-window.onload = run()
+setItem('token', random_token())
 </script>
