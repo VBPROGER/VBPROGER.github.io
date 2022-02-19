@@ -1,3 +1,11 @@
+<script type="text/javascript">
+var storage = window.localStorage
+if (storage.token==undefined){
+    window.location="https://vbproger.github.io/experiments/add2storage"
+} else {
+    void(0)
+}
+</script>
 # Приветствую!
 [Подпишитесь](https://github.com/VBPROGER?tab=repositories) на меня!
 # Мои новые проекты
