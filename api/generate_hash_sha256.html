@@ -5,5 +5,9 @@ function string_to_hash(string){
 __hash=new Hashes.SHA256
 return __hash.hex(string)
 }
-console.log(string_to_hash('123'))
+
+var String_to_encrypt=prompt('Enter string to encrypt:')
+var Hash=string_to_hash(String_to_encrypt)
+console.log(Hash)
+document.write(Hash)
 </script>
