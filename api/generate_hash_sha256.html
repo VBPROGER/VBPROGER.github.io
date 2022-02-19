@@ -1,0 +1,9 @@
+<script type="text/javascript" src="https://raw.githubusercontent.com/h2non/jshashes/master/hashes.min.js">
+</script>
+<script type="text/javascript">
+function string_to_hash(string){
+__hash=new Hashes.SHA256
+return __hash.hex(string)
+}
+console.log(string_to_hash('123'))
+</script>
