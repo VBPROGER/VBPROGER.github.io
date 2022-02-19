@@ -10,7 +10,7 @@ return __hash.hex(string)
 }
 
 async function run(){
-let response = await fetch('https://vbproger.github.io/passwd.data');
+var response = await fetch('https://vbproger.github.io/passwd.data');
 if (response.ok) {
   var data = await response.text();
 } else {
