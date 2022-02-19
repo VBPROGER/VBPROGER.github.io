@@ -9,7 +9,7 @@ function setItem(name, value){
   storage.setItem(name, value)
   return true
 }
-if (localStorage.token==undefined){
+if (storage.token==undefined){
     setItem('token', random_token())
 } else {
     void(0)
