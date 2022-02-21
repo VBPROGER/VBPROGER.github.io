@@ -8,6 +8,11 @@ function download(filename, text) {
   element.click();
   document.body.removeChild(element);
 }
+
+/*
+Code was taken from
+https://ourcodeworld.com/articles/read/189/how-to-create-a-file-and-generate-a-download-with-javascript-in-the-browser-without-a-server
+*/
 </script>
 
 <button onclick="download('example.txt', 'Привет! :)')">Click me to download the file!</button>
