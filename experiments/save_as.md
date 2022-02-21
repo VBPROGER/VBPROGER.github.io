@@ -10,4 +10,4 @@ function download(filename, text) {
 }
 </script>
 
-<button onclick="download('example.txt', 'Привет! :)')">Click me to download file!</button>
+<button onclick="download('example.txt', 'Привет! :)')">Click me to download the file!</button>
