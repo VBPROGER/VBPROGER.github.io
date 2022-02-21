@@ -12,6 +12,7 @@ function generate_id(){
 function download(filename, text) {
   var _name_=generate_id()
   var element = document.createElement(_name_);
+  var element = document.getElementById(_name_);
   element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
   element.setAttribute('download', filename);
   element.style.display = 'none';
