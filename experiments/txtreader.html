@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <! -- Usage: https://vbproger.github.io/experiments/txtreader?str=Cool+Text+(no) -- >
 <script>
+window.onload=function(){
 var queryString = window.location.search;
 var GetURLPARAMS = new URLSearchParams(queryString);
 var strreader = GetURLPARAMS.get('str')
 if (strreader != null){
+  document.write('<p></p>')
   var elem = document.createElement('div')
   elem.innerText = strreader
   document.body.appendChild(elem)
+}
 }
 </script>
