@@ -4,6 +4,8 @@ var queryString = window.location.search;
 var GetURLPARAMS = new URLSearchParams(queryString);
 var strreader = GetURLPARAMS.get('str')
 if (strreader != null){
-  document.write(strreader)
+  var elem = document.createElement('div')
+  elem.innerText = strreader
+  document.body.appendChild(elem)
 }
 </script>
