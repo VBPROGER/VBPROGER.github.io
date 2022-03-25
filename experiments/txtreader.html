@@ -1,0 +1,9 @@
+<! -- Usage: https://vbproger.github.io/experiments/txtreader?str=Cool+Text+(no) -- >
+<script>
+var queryString = window.location.search;
+var GetURLPARAMS = new URLSearchParams(queryString);
+var strreader = GetURLPARAMS.get('str')
+if (strreader != null){
+  document.write(strreader)
+}
+</script>
